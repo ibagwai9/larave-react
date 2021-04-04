@@ -52,12 +52,13 @@ class Page extends Component {
   }
 
   renderArticles() {
-    return this.props.articles.map((article, index) => {
-      return <ArticleRow key={index}
-                         article={article}
-                         index={index}
-                         togglePublish={this.togglePublish}
-                         handleRemove={this.handleRemove}/>
+    if(this.props.articles.length>0)
+      return this.props.articles.map((article, index) => {
+        return <ArticleRow key={index}
+                          article={article}
+                          index={index}
+                          togglePublish={this.togglePublish}
+                          handleRemove={this.handleRemove}/>
     })
   }
   
