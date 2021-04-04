@@ -4,7 +4,7 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
+
 _ide_helper.php
 
 /public/storage
